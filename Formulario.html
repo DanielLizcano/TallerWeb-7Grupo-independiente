@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Registro de Usuarios</h1>
+        <div class="contenido">
+            <form action="" method="GET" class="formulario" name="formulario">
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+
+                <input type="text" name="apellido" placeholder="Apellido" id="apellido"> 
+
+                <input type="text" name="usuario" placeholder="Usuario" id="usuario">
+
+                <div class="row">
+
+                <div class="col-md-4">
+
+                <label  class="flow-text">Fecha de Nacimiento</label></br>
+                <input type="date" name="fNac" id="fNac" value="">
+                </div>
+
+                </div></br>
+
+                <input type="text" name="correo" placeholder="Correo electróico" id="correo">
+
+                <input type="number" name="telefono" placeholder="Telefono" id="telefono"></br>
+
+               
+                <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña"></br>
+
+                <input type="password" name="vercontraseña" placeholder="Verificar Contraseña" id="vercontraseña"> <br/>
+                
+                <label  class="flow-text">Lugar de Residencia</label>
+
+				<div class="input-field col s6">
+					<select id="departamentos" class="browser-default">
+						<option>Departamento</option>
+						<option>Amazonas</option>
+						<option>Antioquia</option>
+						<option>Arauca</option>
+						<option>Atlántico</option>
+						<option>Bogotá</option>
+						<option>Bolivar</option>
+						<option>Boyacá</option>
+						<option>Caldas</option>
+						<option>Caquetá</option>
+						<option>Casanare</option>
+						<option>Cauca</option>
+						<option>Cesar</option>
+						<option>Chocó</option>
+						<option>Córdoba</option>
+						<option>Cundinamarca</option>
+						<option>Guainía</option>
+						<option>Guaviare</option>
+						<option>Huila</option>
+						<option>La Guajira</option>
+						<option>Magdalena</option>
+						<option>Meta</option>
+						<option>Nariño</option>
+						<option>Norte de Santander</option>
+						<option>Putumayo</option>
+						<option>Quindío</option>
+						<option>Risaralda</option>
+						<option>San Andrés y Providencia</option>
+						<option>Santander</option>
+						<option>Sucre</option>
+						<option>Tolima</option>
+						<option>Valle del Cauca</option>
+						<option>Vaupés</option>
+						<option>Vichada</option>
+					</select>
+			 	</div>
+
+			 	<div class="input-field col s6">
+					<select id="municipios" class="browser-default">
+						<option>Municipio</option>
+					</select>
+			 	</div><br><br>
+                
+                <button type="button" onclick="validarFormulario()" >Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app2.js"></script>
+</body>
+</html>
